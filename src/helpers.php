@@ -7,6 +7,13 @@ function text($name, $value = null, $attributes = array(), $options = array())
     return $field->input('text', $name, $value, $attributes, $options);
 }
 
+function password($name, $value = null, $attributes = array(), $options = array())
+{
+    $field = app('Socieboy\Forms\FieldBuilder');
+
+    return $field->input('password', $name, $value, $attributes, $options);
+}
+
 function checkbox($name, $value = null, $attributes = array(), $options = array())
 {
     $field = app('Socieboy\Forms\FieldBuilder');
