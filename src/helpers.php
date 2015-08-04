@@ -21,11 +21,11 @@ function radio($name, $value = null, $attributes = array(), $options = array())
     return $field->input('radio', $name, $value, $attributes, $options);
 }
 
-function select($name, $value = null, $attributes = array(), $options = array())
+function select($name, $options = array(), $value = null, $attributes = array())
 {
     $field = app('Socieboy\Forms\FieldBuilder');
 
-    return $field->input('select', $name, $attributes, $value, $options);
+    return $field->input('select', $name, $value, $attributes, $options);
 }
 
 function email($name, $value = null, $attributes = array(), $options = array())
