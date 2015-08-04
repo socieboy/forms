@@ -117,4 +117,4 @@ $icon
 $error
 ```
 
-By the way the package has support to display the erros if the fiel has validation.
+By the way the package has support to display the erros if the field has validation.
