@@ -9,7 +9,6 @@
             "email": "socieboy@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "laravelcollective/html": "5.1.*"
     },
