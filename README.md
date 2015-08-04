@@ -90,7 +90,7 @@ php artisan vendor:publish
 
 <div class="input-group">
   	<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-  	<input placeholder="email@example.com" icon="glyphicon glyphicon-envelope" class="form-control" name="email" type="email">
+  	<input placeholder="email@example.com" class="form-control" name="email" type="email">
 </div>
 ```
 
