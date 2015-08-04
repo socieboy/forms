@@ -1,0 +1,21 @@
+{
+    "name": "socieboy/forms",
+    "description": "Bootstrap form builder for Laravel",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Francisco Sepulveda",
+            "email": "socieboy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "laravelcollective/html": "5.1.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Socieboy\\Forms\\": "/src"
+        }
+    }
+}
