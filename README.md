@@ -1,3 +1,3 @@
-## Laravel 5.1 Simple Bootstrap Form Builder
+## Laravel 5.1 Bootstrap Form Builder
 
 ### Installation

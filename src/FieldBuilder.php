@@ -173,8 +173,10 @@ class FieldBuilder {
      * @param $attributes
      * @return string
      */
-    public function buildTemplate($type, $attributes)
+    public function buildTemplate($type, &$attributes)
     {
+
+
         // Path to vendor form builder views.
         $publishedPath = base_path().'/resources/views/vendor/socieboy/forms/';
 
@@ -187,6 +189,7 @@ class FieldBuilder {
              */
             if(isset($attributes['icon']))
             {
+                unset($attributes['icon']);
                 return $publishedPath . 'group.blade.php';
             }
 
@@ -207,6 +210,7 @@ class FieldBuilder {
          */
         if(isset($attributes['icon']))
         {
+            unset($attributes['icon']);
             return 'FieldBuilder::group';
         }
 
@@ -231,19 +235,26 @@ class FieldBuilder {
     {
         $this->buildCssClasses($type, $attributes);
 
-        $icon = $this->buildIcon($attributes);
-
         $label = $this->buildLabel($name);
 
         $control = $this->buildControl($type, $name, $value, $attributes, $options);
 
         $error = $this->buildError($name);
 
+        $icon = $this->buildIcon($attributes);
+
         $template = $this->buildTemplate($type, $attributes);
 
         return $this->view->make($template, compact ('name', 'label', 'control', 'error', 'icon'));
     }
 
+
+    /**
+     * Return the icon if exits.
+     *
+     * @param $attributes
+     * @return string
+     */
     public function buildIcon(&$attributes)
     {
         if(isset($attributes['icon']))
