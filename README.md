@@ -92,6 +92,16 @@ php artisan vendor:publish
   	<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
   	<input placeholder="email@example.com" class="form-control" name="email" type="email">
 </div>
+
+
+-----------------
+
+{!! sfile('image') !!}
+
+<div class="form-group ">
+    <label for="imagen">Imagen</label>
+    <input name="imagen" type="file">
+</div>
 ```
 
 If you want to edit some of the templates for each control, just publish the assets.
