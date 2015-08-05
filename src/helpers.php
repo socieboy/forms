@@ -41,3 +41,11 @@ function email($name, $value = null, $attributes = array(), $options = array())
 
     return $field->input('email', $name, $value, $attributes, $options);
 }
+
+
+function sfile($name, $value = null, $attributes = array(), $options = array())
+{
+    $field = app('Socieboy\Forms\FieldBuilder');
+
+    return $field->input('file', $name, $value, $attributes, $options);
+}
