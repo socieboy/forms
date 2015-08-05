@@ -44,7 +44,7 @@ class FormsServiceProvider extends ServiceProvider
     protected function publishFiles()
     {
         $this->publishes([
-            __DIR__.'/config/form-builder.php' => base_path('config/form-builder.php'),
+            __DIR__.'/config/field-builder.php' => base_path('config/field-builder.php'),
         ]);
 
         $this->publishes([
